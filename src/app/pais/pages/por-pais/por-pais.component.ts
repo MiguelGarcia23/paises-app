@@ -19,11 +19,15 @@ export class PorPaisComponent {
     console.log( this.termino );
 
     this.paisService.buscarPais( this.termino )
-      .subscribe( (resp) => {
-        console.log( resp );
-      }, (err) => {
-        this.hayError = true;
+      .subscribe({
+        next: (resp) => {
+          console.log( resp );
+        },
+        error: (err) => {
+          this.hayError = true;
+        }
       })
+        
   }
 
 }
