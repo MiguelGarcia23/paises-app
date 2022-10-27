@@ -24,6 +24,7 @@ export class PorCapitalComponent {
 
     this.hayError = false;
     this.termino  = termino;
+    this.mostrarSugerencias = false;
 
     this.paisService.buscarCapital( termino )
       .subscribe({
