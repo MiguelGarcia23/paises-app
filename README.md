@@ -25,7 +25,7 @@ git init
 _Clonar este repositorio_
 
 ```
-git clone https://github.com/MiguelGarcia23/gif-app
+git clone https://github.com/MiguelGarcia23/paises-app
 ```
 
 _Instalar todas las dependencias necesarias_
